@@ -1,8 +1,7 @@
 FROM ruby:2.2.4
 MAINTAINER Simeon Bateman <simeon@simb.co>
 
-
-RUN apt-get update -qq && apt-get install -y zlib1g-dev libssl-dev libreadline6-dev libyaml-dev git
+RUN apt-get update -qq && apt-get install -y zlib1g-dev libssl-dev libreadline6-dev libyaml-dev git build-essential
 
 # gpg keys listed at https://github.com/nodejs/node
 RUN set -ex \
