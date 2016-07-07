@@ -1,4 +1,4 @@
-FROM ruby:2.2.4
+FROM ruby:2.3
 MAINTAINER Simeon Bateman <simeon@simb.co>
 
 RUN apt-get update -qq && apt-get install -y zlib1g-dev libssl-dev libreadline6-dev libyaml-dev git build-essential
